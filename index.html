@@ -1,5 +1,5 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <head>
         <link rel="stylesheet" href="index.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,8 +20,8 @@
             <p class="password-box" id="password-result-right"></p>
         </div>
         <div id="copy-buttons">
-            <button onclick="copyPasswordLeft()">Copy</button>
-            <button onclick="copyPasswordRight()">Copy</button>
+            <button id="copy-button-left" onclick="copyPasswordLeft()">Copy</button>
+            <button id ="copy-button-right" onclick="copyPasswordRight()">Copy</button>
         </div>
         <script src="index.js"></script>
     </body>
