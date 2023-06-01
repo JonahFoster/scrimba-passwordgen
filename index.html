@@ -9,11 +9,19 @@
     <body>
         <h1>Generate a <br><span id="green-heading">random password</span></h1>
         <h2>Never use an insecure password again.</h2>
-        <button onclick="generatePassword()">Generate Passwords</button>
+        <div id="buttons">
+            <button id="numbers-button" onclick="numbersSwitch()">Numbers: On</button>
+            <button id="symbols-button"onclick="symbolsSwitch()">Symbols: On</button>
+            <button onclick="generatePassword()">Generate Passwords</button>
+        </div>
         <hr id="header-separator">
         <div id="password-results">
             <p class="password-box" id="password-result-left"></p>
             <p class="password-box" id="password-result-right"></p>
+        </div>
+        <div id="copy-buttons">
+            <button onclick="copyPassword()">Copy</button>
+            <button onclick="copyPassword()">Copy</button>
         </div>
         <script src="index.js"></script>
     </body>
