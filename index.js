@@ -8,6 +8,8 @@ const passwordLeftEl = document.getElementById("password-result-left")
 const passwordRightEl = document.getElementById("password-result-right")
 const numberButtonEl = document.getElementById("numbers-button")
 const symbolButtonEl = document.getElementById("symbols-button")
+const copyLeftButtonEl = document.getElementById("copy-button-left")
+const copyRightButtonEl = document.getElementById("copy-button-right")
 
 let numberToggle = true
 let symbolToggle = true
@@ -58,10 +60,12 @@ function generateForBlock(element) {
 
 function copyPasswordLeft() {
     navigator.clipboard.writeText(passwordLeftEl.textContent)
+    copyLeftButtonEl.textContent = "Copied"
 }
 
 function copyPasswordRight() {
     navigator.clipboard.writeText(passwordRightEl.textContent)
+    copyRightButtonEl.textContent = "Copied"
 }
 
 
