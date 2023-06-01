@@ -37,6 +37,8 @@ function symbolsSwitch() {
 function generatePassword() {
     generateForBlock(passwordLeftEl)
     generateForBlock(passwordRightEl)
+    copyLeftButtonEl.textContent = "Copy";
+    copyRightButtonEl.textContent = "Copy";
 }
 
 function generateForBlock(element) {
@@ -61,17 +63,11 @@ function generateForBlock(element) {
 function copyPasswordLeft() {
     navigator.clipboard.writeText(passwordLeftEl.textContent);
     copyLeftButtonEl.textContent = "Copied";
-    setTimeout(function() {
-        copyLeftButtonEl.textContent = "Copy";
-    }, 3000);
 }
 
 function copyPasswordRight() {
     navigator.clipboard.writeText(passwordRightEl.textContent);
     copyRightButtonEl.textContent = "Copied";
-    setTimeout(function() {
-        copyRightButtonEl.textContent = "Copy";
-    }, 3000); 
 }
 
 
