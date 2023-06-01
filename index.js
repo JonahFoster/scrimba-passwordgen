@@ -54,12 +54,17 @@ function generateForBlock(element) {
         }
     }
     element.textContent = passwordString;
-    copyPassword(element.textContent)
 }
 
-function copyPassword(text) {
-    navigator.clipboard.writeText(text);
+function copyPasswordLeft() {
+    navigator.clipboard.writeText(passwordLeftEl.textContent)
 }
+
+function copyPasswordRight() {
+    navigator.clipboard.writeText(passwordRightEl.textContent)
+}
+
+
 
 
 
