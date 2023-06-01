@@ -59,15 +59,20 @@ function generateForBlock(element) {
 }
 
 function copyPasswordLeft() {
-    navigator.clipboard.writeText(passwordLeftEl.textContent)
-    copyLeftButtonEl.textContent = "Copied"
+    navigator.clipboard.writeText(passwordLeftEl.textContent);
+    copyLeftButtonEl.textContent = "Copied";
+    setTimeout(function() {
+        copyLeftButtonEl.textContent = "Copy";
+    }, 3000);
 }
 
 function copyPasswordRight() {
-    navigator.clipboard.writeText(passwordRightEl.textContent)
-    copyRightButtonEl.textContent = "Copied"
+    navigator.clipboard.writeText(passwordRightEl.textContent);
+    copyRightButtonEl.textContent = "Copied";
+    setTimeout(function() {
+        copyRightButtonEl.textContent = "Copy";
+    }, 3000); 
 }
-
 
 
 
